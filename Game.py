@@ -12,13 +12,22 @@ from tqdm.auto import tqdm # для отслеживания прогресса 
 import sys
 import json # работа с файлом настроек игры
 
+# ФУНКЦИИ
+# ------------------
+# функция шифрования
 
 # КЛАССЫ
 # ----------------------------------
 # Класс управления файлами в системе
 class FileManager:
     def __init__(self):
-        ...
+        self._example_player = {
+            'nickname': None,
+            'points': 0,
+        }
+    
+    def load_save(self):
+        pass
 
 # Класс игрока
 class Player:
