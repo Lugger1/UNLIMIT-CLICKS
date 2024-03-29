@@ -19,18 +19,7 @@ import win32api
 
 # КЛАССЫ
 # ----------------------------------
-# Класс управления файлами в системе
-class FileManager:
-    def __init__(self):
-        self._example_player = {
-            'nickname': None,
-            'points': 0,
-        }
-    
-    def load_save(self):
-        pass
-
-# Класс игрока
+# Класс игрока(пока не ебу нужен он будет или нет)
 class Player:
     def __init__(self):
         self.name = ''
