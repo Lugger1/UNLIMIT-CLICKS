@@ -11,6 +11,7 @@ import cryptography as crypt # для шифрования данных
 from tqdm.auto import tqdm # для отслеживания прогресса выполнения кода
 import sys
 import json # работа с файлом настроек игры
+import win32api
 
 # ФУНКЦИИ
 # ------------------
@@ -43,8 +44,11 @@ class App(QMainWindow):
 
     def change_theme(self):
         theme = 'dark_theme.qss'
-        with open(theme) as file_theme:
-            self.setStyleSheet(file_theme.read())
+        try:
+            with open(theme) as file_theme:
+                self.setStyleSheet(file_theme.read())
+        except FileNotFoundError:
+            pass
 
 
 if __name__ == '__main__':
