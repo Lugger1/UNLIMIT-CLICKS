@@ -1,0 +1,14 @@
+QMainWindow{
+    background-color: gray;
+}
+
+QLabel{
+    background-color: none;
+    color: white;
+}
+
+QPushButton{
+    background-color: white;
+    border-radius: 8px;
+    font-size: 20px;
+}

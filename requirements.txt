@@ -3,5 +3,7 @@ pyqtgraph==0.13.4
 cryptography==42.0.5
 tqdm==4.66.2
 icecream==2.1.3
-cx-Freeze==6.15.16
+cx-Freeze
+# Если работаете с python>=3.12 то вот:
+# pip install --upgrade --pre --extra-index-url https://marcelotduarte.github.io/packages/ cx_Freeze
 pywin32==306
